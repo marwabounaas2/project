@@ -93,7 +93,8 @@ import Animal from './Component/Tableau'
 import Utilisateur from "./Component/Utilisateur"
 import logo from "./assets/téléchargement (1).jpg"
 import Example from './Component/example'
-import Fonctoin4 from './Component/Fonctoin4'
+import Example2 from './Component/Example2'
+
 
 function App()
 { 
@@ -117,7 +118,8 @@ function App()
 <img src={logo} alt='logo' className='image'/>
 <img src='https://www.google.com/search?sca_esv=5d08914562322349&sxsrf=AHTn8zpTxN7QP4cqmpAYrL0hgDcmejYZaA:1747565356731&q=fleur&udm=2&fbs=ABzOT_BnMAgCWdhr5zilP5f1cnRvJ3SHQcDVxkdpDyHwlRhdNfno-ClRh0PKqyvFYyTkfIfJOoyi6rL2ScSJ67dNoiLlma6nffqoENgGX1Qo-QK1HPX2oWOr5ms0ecMruv-VEIFXyp4YV37Mzp-n6QnEniiDleB6-tq2rXhjs1CN1nE5h2Mytv-WdWYNhIN9xkrWk8ZuX7LKxpJ_z0tWPI9UFRsEN3T7Yg&sa=X&ved=2ahUKEwjF-byi7KyNAxWcU0EAHeNML-gQtKgLegQIFBAB&biw=1536&bih=730&dpr=1.25#vhid=SK4TKCSsWrIkmM&vssid=mosaic' alt='fleur' className='image'/>
 <Example/>
-<Fonctoin4/>
+<Example2/>
+
 
 </div>
   )
