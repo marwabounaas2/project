@@ -81,20 +81,39 @@ function App()
 }
 export default App
 */
-
+import './App.css'
 import Chaima from "./Component/Chaima"
 import Compteur2 from "./Component/Compteur2"
+import Bouton from './Component/Fonctoin'
+import Produit from './Component/objet'
+import Paragraphe1 from './Component/Paragraphe1'
 import Paragraphe2 from "./Component/Paragraphe2"
+import Message from "./Component/Props"
+import Animal from './Component/Tableau'
 import Utilisateur from "./Component/Utilisateur"
-
+import logo from "./assets/téléchargement (1).jpg"
 function App()
-{
+{ 
+  const Animaux=["chien", "chat", "lapin"]
+  const Style={color:'green', fontSize:'40px'}
   return(
     <div>
 <Compteur2/>  
 <Paragraphe2/>
+<Bouton click={()=>alert("ok")}/>
 <Utilisateur/>
-<Chaima/>  
+<Chaima/>
+<Message contenu="liste  produit"/>
+<Bouton click={()=>alert("bounjour")}/>
+<Message contenu="chaimaa"/>
+<Produit informatoin={{nom:"sucre", prix:"15.45"}}NomStyle={Style}/>
+
+<Animal items={Animaux}/>
+<Bouton click={()=>alert("bien")}/>
+<Paragraphe1/>
+<img src={logo} alt='logo' className='image'/>
+<img src='https://www.google.com/search?sca_esv=5d08914562322349&sxsrf=AHTn8zpTxN7QP4cqmpAYrL0hgDcmejYZaA:1747565356731&q=fleur&udm=2&fbs=ABzOT_BnMAgCWdhr5zilP5f1cnRvJ3SHQcDVxkdpDyHwlRhdNfno-ClRh0PKqyvFYyTkfIfJOoyi6rL2ScSJ67dNoiLlma6nffqoENgGX1Qo-QK1HPX2oWOr5ms0ecMruv-VEIFXyp4YV37Mzp-n6QnEniiDleB6-tq2rXhjs1CN1nE5h2Mytv-WdWYNhIN9xkrWk8ZuX7LKxpJ_z0tWPI9UFRsEN3T7Yg&sa=X&ved=2ahUKEwjF-byi7KyNAxWcU0EAHeNML-gQtKgLegQIFBAB&biw=1536&bih=730&dpr=1.25#vhid=SK4TKCSsWrIkmM&vssid=mosaic' alt='fleur' className='image'/>
+
 </div>
   )
 }
