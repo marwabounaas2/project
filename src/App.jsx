@@ -96,6 +96,7 @@ import Example from './Component/example'
 import Example2 from './Component/Example2'
 import Afficher from './Component/Rendu'
 import Afficher12 from './Component/Rendu12'
+import Test14 from './Composent/test14'
 
 
 function App()
@@ -123,6 +124,7 @@ function App()
 <Example2/>
 <Afficher/>
 <Afficher12/>
+<Test14/>
 
 </div>
   )
